@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    width: 10%;
+    background: red;
+    height: 50px;
+    line-height: 50px;
+    transition: 1s;
+    display: inline-block;
+    position: relative;
+}
+
+li:hover {
+    background: black;
+    transition: 1s;
+    transform: translateY(5px);
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+li ul {
+    position:absolute;
+    opacity: 0;
+    transition: 1s;
+    top: -200px;
+}
+
+li li {
+    width: 100%;
+    margin: 1px;
+}
+
+li:hover ul {
+    opacity: 1;
+    transition: 1s;
+    top: 51px;
+}
